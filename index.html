@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.S.G. Mécanique Petit Moteur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #fdfdfd;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 180px;
+            display: block;
+            margin: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #e63946;
+        }
+        section {
+            padding: 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .services, .galerie {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact input, .contact textarea, .contact button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            background: #e63946;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background: #c1121f;
+        }
+        .galerie img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body><header>
+    <img src="logo.png" alt="Logo J.S.G. Mécanique Petit Moteur">
+    <h1>J.S.G. Mécanique Petit Moteur</h1>
+    <p>Réparation et entretien de vos petits moteurs</p>
+</header>
+
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#apropos">À propos</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="accueil">
+    <h2>Bienvenue chez J.S.G. Mécanique</h2>
+    <p>Nous sommes spécialisés dans la réparation et l’entretien de petits moteurs : tondeuses, souffleuses, VTT, scies et bien plus encore.</p>
+</section>
+
+<section id="services">
+    <h2>Nos Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Tondeuses</h3>
+            <p>Entretien et réparation complète.</p>
+        </div>
+        <div class="card">
+            <h3>Souffleuses</h3>
+            <p>Préparation pour l’hiver et réparations rapides.</p>
+        </div>
+        <div class="card">
+            <h3>VTT</h3>
+            <p>Réparation moteur, freins et suspension.</p>
+        </div>
+        <div class="card">
+            <h3>Scies et autres</h3>
+            <p>Service rapide et efficace pour vos outils motorisés.</p>
+        </div>
+    </div>
+</section>
+
+<section id="apropos">
+    <h2>À propos</h2>
+    <p>Avec plusieurs années d’expérience, J.S.G. Mécanique vous offre un service fiable, rapide et honnête pour tous vos besoins en mécanique de petits moteurs.</p>
+</section>
+
+<section id="galerie">
+    <h2>Galerie</h2>
+    <div class="galerie">
+        <img src="projet1.jpg" alt="Projet de réparation 1">
+        <img src="projet2.jpg" alt="Projet de réparation 2">
+        <img src="projet3.jpg" alt="Projet de réparation 3">
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contactez-nous</h2>
+    <form>
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre courriel" required>
+        <textarea placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+    <p>📍 Adresse: Votre ville, Québec<br>
+    📞 Téléphone: (000) 000-0000<br>
+    ✉️ Courriel: info@jsgmecanique.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 J.S.G. Mécanique Petit Moteur - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
